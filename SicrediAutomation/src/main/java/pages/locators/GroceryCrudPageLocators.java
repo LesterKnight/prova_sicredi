@@ -29,7 +29,11 @@ public class GroceryCrudPageLocators{
 	private By btnDeleteDanger = By.cssSelector(".delete-multiple-confirmation-button");
 	private By textDeleteMultiple = By.cssSelector(".alert-delete-multiple");
 	private By successAssert = By.cssSelector(".alert.alert-success.growl-animated.animated.bounceInDown");
-
+	private By msgDeletion = By.cssSelector(".alert-delete-multiple-one");
+	
+	public By getMsgDeletion() {
+		return msgDeletion;
+	}
 	
 	public By getSuccessAssert() {
 		return successAssert;

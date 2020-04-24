@@ -22,6 +22,8 @@ public class GroceryCrudPageFlow extends GroceryCrudPageAsserts{
 		AssertThatUrlContainsSuccess();
 		AssertThatSuccessMessageBaloonDisappeared();
 		groceryCrudPage.deleteCustomer();
+		AssertThatOnly1ItemWillBeDeleted();
+		groceryCrudPage.confirmDelete();
 		AssertThatDeleteWasSuccess();
 		
 		

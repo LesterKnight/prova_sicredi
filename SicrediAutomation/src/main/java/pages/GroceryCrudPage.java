@@ -41,8 +41,13 @@ public class GroceryCrudPage extends BasePage{
 	public void deleteCustomer() {
 		waitForPageLoad();
 		writeOnField(locators.getTxtSearchName(),"Teste Sicredi");
+		waitForPageLoad();
+		waitForPageLoad();
 		clickOnElement(locators.getCheckBoxAll());
 		clickOnElement(locators.getBtnDelete());
+		}
+	
+	public void confirmDelete() {
 		clickOnElement(locators.getBtnDeleteDanger());
 		waitForPageLoad();
 	}

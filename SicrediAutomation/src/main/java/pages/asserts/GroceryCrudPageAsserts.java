@@ -32,4 +32,8 @@ public class GroceryCrudPageAsserts extends BaseAssert{
 		AssertThatTextExistOnElement(locators.getSuccessAssert(),"Your data has been successfully stored into the database.");
 		AssertThatElementDisappeared(locators.getSuccessAssert());
 	}
+	
+	public void AssertThatOnly1ItemWillBeDeleted() {
+		AssertThatTextExistOnElement(locators.getMsgDeletion(),"Are you sure that you want to delete this 1 item?");
+	}
 }
